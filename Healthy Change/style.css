@@ -1,0 +1,147 @@
+a,li,ul,div,h1,body,p,img{
+    margin: 0;
+}
+
+/* NavBar */
+
+.nav-bar{
+    z-index: +1;
+}
+
+header{    
+    background-color: #b3ffb3;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    z-index: +1;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+}
+
+.nav-item{
+    z-index: +1;
+    display: block;
+    float: left;
+    margin: 0;
+    padding-left: 30px;
+    font-size: 1.25rem;
+    font-family: 'Syne Mono', monospace;
+    padding-top: 12px;
+}
+
+/* Backdrop */
+
+h1{
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    padding-top: 250px;
+    color: #c6ecd9;
+    font-size: 6rem;
+    text-shadow: 2px 2px 4px;
+    padding-bottom: 50px;
+}
+
+/* Plans */
+
+#plans{
+    background-color: #e6ffe6;
+    text-align: center;
+}
+
+.plan-option{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.card{
+    margin: auto;
+    z-index: 0;
+    border: 1px solid;
+    box-shadow: 5px 10px #888888;
+}
+
+h2{
+    font-family: 'Syne Mono', monospace;
+    text-align: center;
+    font-size: rem;
+    text-shadow: 2px 2px 4px;
+}
+
+.card-holder{
+    padding-bottom: 5%;
+    
+}
+/* Test */
+
+.test{
+    width: 100%;
+    height: 300px;
+}
+
+.test-text{
+    padding-top: 30px;
+    padding-bottom: 4%;
+}
+
+.img1{
+    height: 150px;
+    float: left;
+    margin: 15px;
+    border-radius: 100%;
+}
+
+.tests-text{
+    margin-top: 50px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.carousel-item{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.carousel-indicators{
+    margin-top: 30px;
+}
+
+.card-text{
+    padding-bottom: 10px;
+}
+
+
+/* Information */
+
+.details{
+    font-family: 'Syne Mono', monospace;
+    padding-left: 22%;
+
+}
+
+.contact{
+    display: block;
+    text-decoration: none;
+    display: inline;
+    padding-left: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a{
+    color: black;
+}
+
+.ads{
+    width: 50%;
+    margin: auto;
+    padding-top: 25%;
+    padding-bottom: 50px;
+}
+
+.ads-dad{
+    text-align: center;
+}

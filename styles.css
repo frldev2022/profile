@@ -1,0 +1,276 @@
+/* UNIVERSAL STYLING */
+
+* {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    /* line-height: 1.3px; */
+    /* border: 1px solid red; */
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+    margin: 0;
+}
+
+h3 {
+    /* font-family: 'Rubik', sans-serif; */
+    line-height: 1.5;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.text {
+    line-height: 1.5;
+    letter-spacing: 1.7;
+}
+
+/* DARK MODE / LIGHT MODE */
+
+/* label {
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    right: 20px;
+    top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+label:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: black;
+    transition: 0.4s;
+}
+
+.active {
+    left: 24px;
+    counter-reset: white;
+}
+
+body.night {
+    background-color: black;
+    color: white;
+} */
+
+/* Responsive NavBar  */
+
+.navbar {
+    background-color: #343335;
+    width: 100%;
+    height: 75px;
+    z-index: 5;
+    position: fixed;
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    color: rgb(218, 216, 216);
+    position: absolute;
+    top: 22px;
+    left: 0px;
+}
+
+.brand-logo:hover,
+.links:hover {
+    color: white;
+}
+
+.toggle-navbar {
+    position: absolute;
+    top: 11px;
+    right: 14px;
+    padding: 4px;
+    border-color: transparent;
+    background-color: transparent;
+    color: rgb(218, 216, 216);
+    font-size: 2.5rem;
+    transition: transform 0.25s ease-in-out;
+}
+
+.toggle-navbar:hover {
+    transform: rotate(180deg);
+
+}
+
+.navbar-links {
+    position: absolute;
+    z-index: 10;
+    /* text-decoration: none; */
+    top: 75px;
+    left: 0;
+    font-size: 1.2rem;
+    background-color: #34333575;
+    width: 100%;
+    line-height: 50px;
+    height: 13rem;
+    transition: 500ms;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.links {
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    margin-right: 7.5px;
+}
+
+.links:hover {
+    margin-right: 10px;
+    background-color: #4b494d;
+    font-style: italic;
+    font-size: 1.3rem;
+    transition-duration: 500ms;
+}
+
+.display-links {
+    transition: 750ms;
+    height: 0rem;
+}
+
+/* HEADER SECTION */
+
+.showcase::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(imgs/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    opacity: 0.7;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+}
+
+.showcase:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.showcase:hover .content {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.content {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -145px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    transition: all 1000ms;
+}
+
+.content .logo {
+    height: 310px;
+    width: 310px;
+}
+
+.content .title {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.content .text {
+    line-height: 1.7;
+    margin-top: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* CONTAINER PROPERTIES */
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+
+/* SERVICES */
+
+.services {
+    margin-top: 100px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+/* PROJECTS */
+
+/* .black {
+    color: black;
+}
+
+.project {
+    width: 500px;
+} */
+
+/* certificates */
+
+.container .cert-div {
+    display: flex;
+    justify-content: center;
+}  
+
+.certificate {
+    width: 500px;
+}
+   
+/* ABOUT SECTION */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#laptop {
+    margin: auto;
+}
+
+/* MEDIA QUERIES  */
+
+@media only screen and (max-width: 800px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .skill {
+        margin-top: 50px;
+    }
+
+    #laptop {
+        margin-bottom: 75px;
+        text-align: center;
+    }
+
+    .project {
+        max-width: 90%;
+    }
+}
