@@ -236,7 +236,7 @@ body.night {
 }  
 
 .certificate {
-    width: 500px;
+    max-width: 80%;
 }
    
 /* ABOUT SECTION */
